@@ -17,12 +17,10 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.show -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
+          <a class="page-link" href="{{ "/javascript/" | relative_url }}">JavaScript</a>
+          <a class="page-link" href="{{ "/react/" | relative_url }}">React</a>
+          <a class="page-link" href="{{ "/css-in-javascript/" | relative_url }}">Css In JavaScript</a>
+          <a class="page-link" href="{{ "/css-and-sass/" | relative_url }}">Css & Sass</a>
         </div>
       </nav>
     {%- endif -%}
